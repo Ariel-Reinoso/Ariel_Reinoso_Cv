@@ -3,105 +3,362 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Currículum de Ariel Reinoso</title>
-  <!-- Bootstrap CSS -->
+  <title>Ariel Reinoso — Diseñador Multimedia</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
+  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --primary: #1d3557; /* azul oscuro */
+      --secondary: #457b9d; /* azul intermedio */
+      --accent: #06b6d4; /* turquesa suave */
+      --muted: #6b7280;
+      --light: #f8fafc;
+    }
+
     body {
-      background-color: #f7f9fb;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: #111827;
+      scroll-behavior: smooth;
     }
-    .card {
-      border: none;
-      border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+    nav.navbar {
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
-    .header {
-      background: linear-gradient(135deg, #007bff, #6610f2);
+
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
-      border-radius: 1rem 1rem 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 20px;
     }
+
+    .hero h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .btn-main {
+      background: white;
+      color: var(--primary);
+      border-radius: 50px;
+      padding: 10px 28px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-main:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    section {
+      padding: 60px 0 40px;
+    }
+
     .section-title {
-      color: #6610f2;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      margin-top: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 35px;
+      position: relative;
     }
-    .progress-bar {
-      background-color: #6610f2;
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .card-custom {
+      border: none;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+      transition: all 0.3s;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    .skill-bar {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .skill-bar div {
+      height: 100%;
+      background: linear-gradient(90deg, var(--secondary), var(--accent));
+    }
+
+    .portfolio-placeholder {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      background: #e9ecef;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 80px 20px;
+        text-align: center;
+      }
+      .hero h1 { font-size: 2.2rem; }
+      .section-title { margin-bottom: 25px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="container py-5">
-    <div class="card mx-auto" style="max-width: 900px;">
-      <div class="row g-0">
-        <!-- Columna izquierda -->
-        <div class="col-md-4 header text-center p-4">
-          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="img-fluid rounded-circle mb-3" alt="Foto de perfil" width="120">
-          <h3 class="fw-bold">Ariel Reinoso</h3>
-          <p class="mb-1">Estudiante Universitario</p>
-          <p class="small">Diseño Multimedia | Universidad Politécnica Salesiana</p>
-          <hr class="border-light">
 
-          <h6 class="mt-4 mb-2"><i class="bi bi-telephone"></i> Contacto</h6>
-          <p class="small mb-1"> 098-776-6847</p>
-          <p class="small mb-1"> reinoso17brandon@hotmail.com</p>
-          <p class="small mb-0"> Quito, Comité del Pueblo</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero" style="color: var(--primary);">Ariel Reinoso</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-          <h6 class="mt-4 mb-2"><i class="bi bi-translate"></i> Idiomas</h6>
-          <p class="small mb-1">Inglés</p>
-          <div class="progress" style="height:8px;">
-            <div class="progress-bar" style="width: 85%;"></div>
-          </div>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1 data-aos="fade-up">Ariel Reinoso</h1>
+      <p data-aos="fade-up" data-aos-delay="100">Diseñador Multimedia — Quito, Ecuador</p>
+      <a href="#portafolio" class="btn btn-main mt-4" data-aos="fade-up" data-aos-delay="200">Ver Portafolio</a>
+    </div>
+  </section>
 
-          <h6 class="mt-4 mb-2"><i class="bi bi-person-check"></i> Referencias</h6>
-          <p class="small mb-1 fw-bold">Alexander Angulo</p>
-          <p class="small mb-0">Encargado de personal<br> 099-166-3957</p>
+  <!-- Sobre mí -->
+  <section id="sobre" class="container" data-aos="fade-up">
+    <h2 class="section-title">Sobre mí</h2>
+    <p class="text-center col-lg-9 mx-auto">
+      Soy un estudiante de Diseño Multimedia con pasión por el diseño gráfico, la animación y la creación de experiencias digitales visualmente atractivas.
+      Me considero una persona comprometida, responsable y con una visión creativa que busca aportar soluciones innovadoras en cada proyecto.
+    </p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="container" data-aos="fade-up">
+    <h2 class="section-title">Servicios</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-custom p-4 text-center">
+          <div class="icon mb-2"><i class="bi bi-palette"></i></div>
+          <h6>Diseño Gráfico</h6>
+          <p class="text-muted small">Creación de piezas visuales, identidad de marca, logotipos y material publicitario digital o impreso.</p>
         </div>
-
-        <!-- Columna derecha -->
-        <div class="col-md-8 p-4">
-          <h5 class="fw-bold mb-3">Perfil Profesional</h5>
-          <p class="text-muted">
-            Inicié mis estudios universitarios en 2023 en la carrera de Diseño Multimedia. 
-            Soy una persona responsable, organizada y proactiva, con ganas de adquirir nuevas 
-            experiencias profesionales y aplicar mis conocimientos en un entorno laboral dinámico. 
-            Busco oportunidades que me permitan crecer y desarrollarme en el ámbito laboral.
-          </p>
-
-          <div class="section-title">Educación</div>
-          <ul class="list-unstyled text-muted">
-            <li><strong>Universidad Politécnica Salesiana</strong> – Diseño Multimedia (2023 - Actualidad)</li>
-            <li><strong>Unidad Educativa Manuela Cañizares</strong> – Bachiller en Ciencias (2014 - 2021)</li>
-            <li><strong>Unidad Educativa Nuestra Señora del Rosario</strong> – Educación Básica (2008 - 2014)</li>
-          </ul>
-
-          <div class="section-title">Experiencia Laboral</div>
-          <p class="mb-1"><strong>Plantación Tomates Jose</strong> (2 años)</p>
-          <ul class="text-muted small">
-            <li>Participación activa en la siembra, mantenimiento y cosecha del cultivo de tomates.</li>
-            <li>Organización de recursos y coordinación de actividades diarias.</li>
-            <li>Atención al cliente y participación en ventas directas del producto.</li>
-          </ul>
-
-          <p class="mb-1"><strong>Uber / Indrive</strong> (3 meses)</p>
-          <ul class="text-muted small">
-            <li>Servicio de transporte con atención personalizada al cliente.</li>
-            <li>Planificación de rutas eficientes y mantenimiento del vehículo.</li>
-            <li>Enfoque profesional y trato cercano con cada pasajero.</li>
-          </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 text-center">
+          <div class="icon mb-2"><i class="bi bi-camera"></i></div>
+          <h6>Fotografía y Edición</h6>
+          <p class="text-muted small">Fotografía de productos, retratos y edición profesional con un enfoque estético y técnico.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 text-center">
+          <div class="icon mb-2"><i class="bi bi-display"></i></div>
+          <h6>Diseño Multimedia</h6>
+          <p class="text-muted small">Creación de contenido audiovisual, animaciones y experiencias interactivas con herramientas digitales.</p>
         </div>
       </div>
     </div>
-  </div>    
+  </section>
 
-  <!-- Bootstrap JS -->
+  <!-- Educación -->
+  <section id="educacion" class="container" data-aos="fade-up">
+    <h2 class="section-title">Educación</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-custom p-4 text-center">
+          <div class="icon mb-2"><i class="bi bi-mortarboard"></i></div>
+          <h6>Universidad Politécnica Salesiana</h6>
+          <p class="text-muted small mb-0">Diseño Multimedia (2023 - Actualidad)</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 text-center">
+          <div class="icon mb-2"><i class="bi bi-journal"></i></div>
+          <h6>Unidad Educativa Manuela Cañizares</h6>
+          <p class="text-muted small mb-0">Bachiller en Ciencias (2014 - 2021)</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 text-center">
+          <div class="icon mb-2"><i class="bi bi-book"></i></div>
+          <h6>Unidad Educativa Nuestra Señora del Rosario</h6>
+          <p class="text-muted small mb-0">Educación Básica (2008 - 2014)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experiencia" class="container" data-aos="fade-up">
+    <h2 class="section-title">Experiencia</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-custom p-4">
+          <h6 class="fw-bold">Plantación Tomates Jose</h6>
+          <p class="text-muted small mb-0">2 años — Siembra, mantenimiento y ventas directas del producto.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-custom p-4">
+          <h6 class="fw-bold">Uber / Indrive</h6>
+          <p class="text-muted small mb-0">3 meses — Atención al cliente, planificación de rutas, trato profesional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="container" data-aos="fade-up">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="col-lg-8 mx-auto">
+      <p><strong>Diseño Gráfico</strong></p>
+      <div class="skill-bar mb-3"><div style="width:80%"></div></div>
+      <p><strong>Photoshop / Illustrator</strong></p>
+      <div class="skill-bar mb-3"><div style="width:75%"></div></div>
+      <p><strong>Prototipado UI/UX</strong></p>
+      <div class="skill-bar mb-3"><div style="width:65%"></div></div>
+      <p><strong>Comunicación Visual</strong></p>
+      <div class="skill-bar"><div style="width:70%"></div></div>
+    </div>
+  </section>
+
+  <!-- Herramientas -->
+  <section id="herramientas" class="container" data-aos="fade-up">
+    <h2 class="section-title">Herramientas y Software</h2>
+    <div class="text-center">
+      <p class="text-muted">Adobe Photoshop · Illustrator · Premiere Pro · Figma · Canva · Blender · Audition</p>
+    </div>
+  </section>
+
+  <!-- Idiomas -->
+  <section id="idiomas" class="container" data-aos="fade-up">
+    <h2 class="section-title">Idiomas</h2>
+    <div class="text-center">
+      <p>Español — Nativo | Inglés — 85%</p>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio" class="container" data-aos="fade-up">
+    <h2 class="section-title">Portafolio</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="portfolio-placeholder">Proyecto #1 — Próximamente</div></div>
+      <div class="col-md-4"><div class="portfolio-placeholder">Proyecto #2 — Próximamente</div></div>
+      <div class="col-md-4"><div class="portfolio-placeholder">Proyecto #3 — Próximamente</div></div>
+    </div>
+  </section>
+
+  <!-- Referencias -->
+  <section id="referencias" class="container" data-aos="fade-up">
+    <h2 class="section-title">Referencias</h2>
+    <div class="text-center">
+      <p><strong>Alexander Angulo</strong> — Encargado de personal, Tel: 099-166-3957</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="container" data-aos="fade-up">
+    <h2 class="section-title">Contacto</h2>
+    <div class="text-center">
+      <p><i class="bi bi-envelope"></i> reinoso17brandon@hotmail.com</p>
+      <p><i class="bi bi-phone"></i> 098-776-6847</p>
+      <p><i class="bi bi-geo-alt"></i> Quito, Comité del Pueblo</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer>
+  <p>© 2025 Ariel Reinoso — Diseñador Multimedia</p>
+  <div class="mt-3">
+    <a href="Ariel_Reinoso_cv.pdf" target="_blank" class="btn btn-light btn-sm mx-2">
+      <i class="bi bi-file-earmark-arrow-down"></i> Descargar PDF
+    </a>
+    <button onclick="window.print()" class="btn btn-outline-light btn-sm mx-2">
+      <i class="bi bi-printer"></i> Imprimir
+    </button>
+  </div>
+</footer>
+
+
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true });
+  </script>
 </body>
 </html>
