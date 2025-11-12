@@ -36,7 +36,7 @@ Este sitio muestra mi perfil profesional, mis habilidades y futuros proyectos en
 
 ## 🌐 Vista en línea
 
-🔗 **Ver sitio:** 
+🔗 **Ver sitio:** https://ariel-reinoso.github.io/Ariel_Reinoso_Cv/
 
 📄 **Descargar mi CV:** [Ariel_Reinoso_cv.pdf](Ariel_Reinoso_cv.pdf)
 
