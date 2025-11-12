@@ -1,4 +1,4 @@
-# Portafolio — Ariel Reinoso
+ Portafolio — Ariel Reinoso
 
 Bienvenido a mi portafolio web personal.  
 Soy **Ariel Reinoso**, estudiante de **Diseño Multimedia** en la Universidad Politécnica Salesiana (Quito, Ecuador).  
@@ -6,7 +6,7 @@ Este sitio muestra mi perfil profesional, mis habilidades y futuros proyectos en
 
 ---
 
-## 🚀 Tecnologías usadas
+ 🚀 Tecnologías usadas
 
 - **HTML5**  
 - **CSS / Bootstrap 5.3**  
@@ -14,7 +14,7 @@ Este sitio muestra mi perfil profesional, mis habilidades y futuros proyectos en
 
 ---
 
-## 🎨 Paleta de colores
+ 🎨 Paleta de colores
 
 | Color | Hex |
 |-------|------|
@@ -25,7 +25,7 @@ Este sitio muestra mi perfil profesional, mis habilidades y futuros proyectos en
 
 ---
 
-## 📄 Funcionalidades
+ 📄 Funcionalidades
 
 - Secciones: *Sobre mí, Servicios, Educación, Experiencia, Habilidades, Portafolio, Contacto*  
 - Animaciones suaves al hacer scroll  
@@ -34,7 +34,7 @@ Este sitio muestra mi perfil profesional, mis habilidades y futuros proyectos en
 
 ---
 
-## 🌐 Vista en línea
+ 🌐 Vista en línea
 
 🔗 **Ver sitio:** https://ariel-reinoso.github.io/Ariel_Reinoso_Cv/
 
@@ -42,7 +42,7 @@ Este sitio muestra mi perfil profesional, mis habilidades y futuros proyectos en
 
 ---
 
-## 📬 Contacto
+ 📬 Contacto
 
 📧 reinoso17brandon@hotmail.com  
 📱 098-776-6847  
